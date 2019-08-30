@@ -1,5 +1,5 @@
 body {
-	font-family: Cooper Black, Arial Black;
+	font-family: Arial Narrow;
 	font-size: 32px;
 	background-color: #323639;
 }
@@ -28,20 +28,55 @@ a {
 	border: 2px solid red;
 	text-decoration: none;
 	font-size:20px;
+	font-weight: bold ;
 }
+
+.filter {
+	display: inline-block;
+	padding: 5px;
+	border-radius: 5px;
+	color: grey;
+	font-size:20px;
+}
+
 
 /*NAV END*/
 
-/*HOME START*/
+/*TITLE START*/
 
 .title {
 	width: 100%;
-	margin-top: 100px;
+	margin-top: 70px;
 }
 
 .title img{
 	width: 100%;
 }
+
+@keyframes title {
+  0%   {background-color:yellow; left:0px; top:0px;}
+  25%  {background-color:pink; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:pink; left:0px; top:200px;}
+  100% {background-color:yellow; left:0px; top:0px;}
+}
+
+.notsafe {
+	position: fixed;
+	font-size: 100px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 100px;
+	margin-left: 100px;
+	color: red;
+	animation-name: title;
+  	animation-duration: 4s;
+  	animation-iteration-count: infinite;
+}
+
+/*TITLE END*/
+
+/*RESEARCH START*/
 
 .research{
 	display: flex;
@@ -57,14 +92,16 @@ a {
 
 .research-item img {
 	width: 100%;
+	border: 2px solid red;
 }
 
 .research-item span{
-	color: grey;
-	font-size: 18px;
+	color: pink;
+	font-size: 15px;
+	font-family: Arial Narrow;
 }
 
-/*HOME END*/
+/*RESEARCH END*/
 
 /*ESSAY START*/
 
@@ -133,13 +170,6 @@ a {
 	background-color: red;
 }
 
-.filter {
-	display: inline-block;
-	padding: 5px;
-	border-radius: 5px;
-	color: grey;
-	font-size:20px;
-}
 
 
 
