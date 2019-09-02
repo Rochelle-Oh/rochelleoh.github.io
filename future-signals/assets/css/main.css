@@ -2,10 +2,13 @@ body {
 	font-family: Arial Narrow;
 	font-size: 32px;
 	background-color: #323639;
+	cursor:cell;
 }
 
 a {
 	color:red;
+	text-decoration: none;
+	cursor: not-allowed;
 }
 
 /*NAV START*/
@@ -17,6 +20,7 @@ a {
 	position: fixed;
 	top: 0px;
 	left: 0px;
+
 }
 
 .nav-item{
@@ -29,7 +33,9 @@ a {
 	text-decoration: none;
 	font-size:20px;
 	font-weight: bold ;
+  	cursor: not-allowed;
 }
+
 
 .filter {
 	display: inline-block;
@@ -41,6 +47,28 @@ a {
 
 
 /*NAV END*/
+
+/*INTERACTIVE CLASSES*/
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.large {
+	flex: 0 0 66.66%;
+	transition: 2s;
+	cursor: zoom-out;
+}
+
+.active {
+	background-color: red;
+}
+/*INTERACTIVE END*/
+
 
 /*TITLE START*/
 
@@ -54,16 +82,16 @@ a {
 }
 
 @keyframes title {
-  0%   {background-color:yellow; left:0px; top:0px;}
-  25%  {background-color:lime; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:lime; left:0px; top:200px;}
-  100% {background-color:yellow; left:0px; top:0px;}
+  0%   {background-color:blue; left:0px; top:0px;}
+  25%  {background-color:red; left:200px; top:0px;}
+  50%  {background-color:yellow; left:200px; top:200px;}
+  75%  {background-color:red; left:0px; top:200px;}
+  100% {background-color:blue; left:0px; top:0px;}
 }
 
 .notsafe {
 	position: fixed;
-	font-size: 100px;
+	font-size: 90px;
 	font-weight: bold;
 	text-align: center;
 	margin-top: 100px;
@@ -110,7 +138,7 @@ a {
   	font-size: 30px;
   	font-weight: bold;
   	color: black;
-  	cursor: pointer;
+  	cursor: not-allowed;
 }
 /* Change color on mouse-over */
 .close-button:hover {
@@ -152,6 +180,10 @@ a {
 	margin-bottom: 5px;
 }
 
+.popup-container p:hover {
+	color:red;
+}
+
 .popup-container img{
 	border: 2px solid black;
 	width: 40%;
@@ -165,7 +197,7 @@ a {
 	right:15px;
 	color:white;
 	font-size:30px;
-	cursor:pointer;
+	cursor:not-allowed;
 }
 
 .popup-close:hover {
@@ -193,6 +225,12 @@ a {
 	border: 2px solid red;
 }
 
+.research-item iframe {
+	width:100%;
+	height: 75%;
+	border: 2px solid red;
+}
+
 .research-item span{
 	color: pink;
 	font-size: 15px;
@@ -204,32 +242,41 @@ a {
 /*ESSAY START*/
 
 .essay {
-	margin-top: 150px;
+	margin-top: 50px;
 	display: flex;
 	flex-wrap: wrap;
+	background-color: white;
 }
 
 .text {
 	flex: 0 0 66.66%;
 	padding: 10px;
-	color:white;
 }
 
 .text h1 {
+	margin-top:20px;
 	font-size: 60px;
 	margin-bottom: 10px;
+	font-weight:bold;
+	color:red;
 }
 
 .text h2{
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 30px;
 	margin-bottom: 5px;
+	float:right;
+	width:400px;
+	color:pink;
 }
 
 .text p {
-	margin-bottom: 20px;
-	font-size: 25px;
-
+	margin-bottom: 10px;
+	font-size: 20px;
+	color:black;
+	margin-left:100px;
+	font-family:arial;
+	
 }
 
 .figure {
@@ -238,6 +285,7 @@ a {
 }
 
 .figure img{
+	margin-top:80px;
 	width: 100%;
 }
 
@@ -247,26 +295,6 @@ a {
 }
 
 /*ESSAY END*/
-
-/*INTERACTIVE CLASSES*/
-
-.hide {
-	display: none;
-}
-
-.show {
-	display: block;
-}
-
-.large {
-	flex: 0 0 66.66%;
-	transition: 2s;
-	cursor: zoom-out;
-}
-
-.active {
-	background-color: red;
-}
 
 
 
