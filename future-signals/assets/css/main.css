@@ -223,6 +223,7 @@ a {
 .research-item img {
 	width: 100%;
 	border: 2px solid red;
+	cursor: zoom-in;
 }
 
 .research-item iframe {
