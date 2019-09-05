@@ -52,9 +52,9 @@ $(document).ready(function(){
 
 //not safe
 
-$(function(){  // $(document).ready shorthand
-  $('.notsafe').fadeIn('slow');
-});
+	$(function(){ 
+  		$('.notsafe').fadeIn('slow');
+	});
 
 $(document).ready(function() {
     
