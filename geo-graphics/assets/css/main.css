@@ -1,0 +1,154 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+	background-color: black;
+	color:white;
+}
+
+a {
+	color:red;
+}
+
+/*Index Homepage*/
+
+.index-intro {
+	font-size: 18px;
+	margin-bottom: 25vh;
+	padding: 10px;
+}
+
+.index-row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	margin-bottom: 5px;
+	margin-top:5px;
+	border-top: 2px solid white;
+}
+
+.index-name {
+	flex: 0 0 50%;
+}
+
+.index-layer {
+	flex: 0 0 25%;
+}
+
+.index-tag {
+	flex: 0 0 25%;
+}
+
+
+/*IP Address*/
+.ip{
+	background-color:cyan;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.ip-text{
+	color:magenta;
+	font-size: 50vw;
+	text-align: center;
+
+}
+
+/*IP END*/
+
+/*Checkers COMMENCE*/
+
+.checkers {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.checkers-white{
+	width: 50vw;
+	height: 50vh;
+	background-color: cyan;
+}
+
+.checkers-black{
+	width: 50vw;
+	height: 50vh;
+	background-color: magenta;
+}
+
+.checkers-type{
+	width: 100vw;
+	height:100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+
+}
+
+.checkers-text {
+	font-size: 10vw;
+	color: magenta;
+}
+
+/*CLOUD PATTERN COMMENCE*/
+
+.cloud-pattern{
+	display: flex;
+	flex-wrap:wrap;
+	background-color:magenta;
+}
+
+.cloud-circle {
+	width:25vw;
+	height: 45vh;
+	background-image:linear-gradient(cyan, magenta);
+	border-radius: 50%;
+
+}
+
+/*chip COMMENCE*/
+
+.chip-container{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cyan;
+}
+
+.chip {
+	width: 60vh;
+	height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 20px solid gray;
+	padding: 5vh;
+	background-color: magenta;
+}
+
+.text{
+	color: gray;
+	font-size: 5vw;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
