@@ -38,6 +38,53 @@ a {
 	flex: 0 0 25%;
 }
 
+/*URL*/
+.url{
+	background-color: red;
+	height:100vh;
+	width:100vw;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+}
+
+.url-text {
+	color:white;
+	font-size: 15vw;
+	text-align: center;
+}
+
+/*SUB*/
+.sub{
+	background-color:red;
+	height:100vh;
+	width:100vw;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.sub-text{
+	color:gainsboro;
+	font-size: 5vw;
+	text-align: center;
+}
+
+/*Seconds*/
+.seconds{
+	background-color:darkslategray;
+	height:100vh;
+	width:100vw;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.seconds-text{
+	color:darkgray;
+	font-size: 5vw;
+	text-align: center;
+}
 
 /*IP Address*/
 .ip{
@@ -59,23 +106,67 @@ a {
 
 /*IP END*/
 
-/*Checkers COMMENCE*/
+
+
+/*Grassblock and silicon board COMMENCE*/
 
 .checkers {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.checkers-white{
-	width: 50vw;
-	height: 50vh;
-	background-color: cyan;
+.checkers-limegreen{
+	width: 20vw;
+	height: 25vh;
+	background-color: limegreen;
 }
 
-.checkers-black{
-	width: 50vw;
-	height: 50vh;
-	background-color: magenta;
+.checkers-lawngreen{
+	width: 20vw;
+	height: 25vh;
+	background-color: lawngreen;
+	}
+
+.checkers-forestgreen{
+	width: 20vw;
+	height: 25vh;
+	background-color: forestgreen;
+}
+
+.checkers-darkgreen{
+	width: 20vw;
+	height: 25vh;
+	background-color: darkgreen;
+}
+
+.checkers-sienna{
+	width: 20vw;
+	height: 25vh;
+	background-color: sienna;
+}
+
+.checkers-peru{
+	width: 20vw;
+	height: 25vh;
+	background-color: peru;
+}
+
+.checkers-saddlebrown{
+	width: 20vw;
+	height: 25vh;
+	background-color: saddlebrown;
+}
+
+.checkers-gold{
+	width: 20vw;
+	height: 25vh;
+	background-color: gold;
+}
+
+.checkers-lightyellow{
+	width: 20vw;
+	height: 25vh;
+	background-color: lightyellow;
 }
 
 .checkers-type{
@@ -92,21 +183,21 @@ a {
 
 .checkers-text {
 	font-size: 10vw;
-	color: magenta;
+	color: white;
 }
 
-/*CLOUD PATTERN COMMENCE*/
+/*Circle marble COMMENCE*/
 
 .cloud-pattern{
 	display: flex;
 	flex-wrap:wrap;
-	background-color:magenta;
+	background-color:dimgray;
 }
 
 .cloud-circle {
-	width:25vw;
-	height: 45vh;
-	background-image:linear-gradient(cyan, magenta);
+	width:100vw;
+	height: 100vh;
+	background-image:linear-gradient(aquamarine, dodgerblue);
 	border-radius: 50%;
 
 }
@@ -119,7 +210,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: cyan;
+	background-color: springgreen;
 }
 
 .chip {
@@ -128,15 +219,15 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 20px solid gray;
+	border: 20px solid saddlebrown;
+	border-radius: 50px;
 	padding: 5vh;
-	background-color: magenta;
+	background-image:linear-gradient(peachpuff, orange);
 }
 
 .text{
-	color: gray;
+	color: saddlebrown;
 	font-size: 5vw;
-
 }
 
 
