@@ -6,8 +6,35 @@ body {
 }
 
 a {
-	color:red;
+	color:white;
+	text-decoration: none;
 }
+
+/*Verified COMMENCE*/
+
+.cycle-pattern{
+	display: flex;
+	flex-wrap:wrap;
+	align-items: center;
+	justify-content: center;
+	background-color:mediumaquamarine;
+	width:100vw;
+	height: 100vh;
+}
+
+.cycle-circle img{
+	width:50vw;
+	animation: cyclespin;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes cyclespin{
+	0%		{transform: rotate(0deg) }
+	100% 	{transform: rotate(-360deg)}
+}
+
 
 /*Index Homepage*/
 
@@ -70,6 +97,46 @@ a {
 	text-align: center;
 }
 
+/*Weather*/
+.weather{
+	display:flex;
+	flex:wrap;
+	align-items: center;
+	justify-content: center;
+	height:100vh;
+	width: 100vw;
+	animation-name: bg;
+	animation-duration:4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes bg {
+	0% 		{background-color: white;}
+	20% 	{background-color: cyan;}
+	40% 	{background-color: pink;}
+	60% 	{background-color: orange;}
+	80% 	{background-color: red;}
+	100% 	{background-color: white;}
+
+}
+
+.weather-text {
+	color:darkgray;
+}
+
+.weather-text h1{
+	font-size: 20vh;
+}
+
+.weather-text h2{
+	font-size: 5vh;
+}
+
+.weather-text p{
+	font-size:3vh;
+}
+
 /*Seconds*/
 .seconds{
 	background-color:darkslategray;
@@ -86,26 +153,38 @@ a {
 	text-align: center;
 }
 
-/*IP Address*/
-.ip{
-	background-color:cyan;
-	height: 100vh;
+/*cannot*/
+
+.cannot{
 	width: 100vw;
-	display: flex;
-	align-items: center;
+	height: 100vh;
+	display:flex;
+	align-items:center;
 	justify-content: center;
-
+	animation-name: bgcannot;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
-.ip-text{
-	color:magenta;
-	font-size: 50vw;
-	text-align: center;
-
+@keyframes bgcannot {
+	0%		{background-color: white;}
+	25%		{background-color: darkgray;}
+	50%		{background-color: orange;}
+	75%		{background-color:darkgray;}
+	100%	{background-color: white;}
 }
 
-/*IP END*/
+/*trending*/
 
+.trending{
+	width: 100vw;
+	height: 100vh;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	background-color:#1c1c1c;
+}
 
 
 /*Grassblock and silicon board COMMENCE*/
@@ -169,6 +248,30 @@ a {
 	background-color: lightyellow;
 }
 
+.checkers-silver{
+	width: 20vw;
+	height: 25vh;
+	background-color: silver;
+}
+
+.checkers-dimgray{
+	width: 20vw;
+	height: 25vh;
+	background-color: dimgray;
+}
+
+.checkers-gray{
+	width: 20vw;
+	height: 25vh;
+	background-color: gray;
+}
+
+.checkers-darkgray{
+	width: 20vw;
+	height: 25vh;
+	background-color: darkgray;
+}
+
 .checkers-type{
 	width: 100vw;
 	height:100vh;
@@ -178,7 +281,6 @@ a {
 	position: fixed;
 	left: 0;
 	top: 0;
-
 }
 
 .checkers-text {
@@ -191,7 +293,7 @@ a {
 .cloud-pattern{
 	display: flex;
 	flex-wrap:wrap;
-	background-color:dimgray;
+	background-color:black;
 }
 
 .cloud-circle {
@@ -199,7 +301,15 @@ a {
 	height: 100vh;
 	background-image:linear-gradient(aquamarine, dodgerblue);
 	border-radius: 50%;
+	animation: spherespin;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
 
+@keyframes spherespin{
+	0%		{transform: rotate(0deg) }
+	100% 	{transform: rotate(360deg)}
 }
 
 /*chip COMMENCE*/
@@ -230,16 +340,119 @@ a {
 	font-size: 5vw;
 }
 
+/*livechat commence*/
+
+.livechat {
+	width: 100vw;
+	height: 100vh;
+	display:flex;
+	background-color: #1d1d1d;
+}
+
+.livechat-text {
+	width: 33.33%;
+	margin-left: 66.66%;
+	padding: 10px;
+}
+
+.livechat-text h1{
+	font-size: 1.5vh;
+	color: gray;
+}
+
+.livechat-text p{
+	font-size: 2.5vh;
+	color:white;
+}
+
+
+/*Verified COMMENCE*/
+
+.tick-pattern{
+	display: flex;
+	flex-wrap:wrap;
+	align-items: center;
+	justify-content: center;
+	background-color:white;
+	width:100vw;
+	height: 100vh;
+}
+
+.tick-circle img{
+	animation: tickspin;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes tickspin{
+	0%		{transform: rotate(0deg) }
+	100% 	{transform: rotate(360deg)}
+}
+
+/*Green COMMENCE*/
+
+.greenery {
+	display: flex;
+	flex-wrap:wrap;
+	background-color:white;
+	width:100vw;
+	height: 100vh;
+}
+
+/*GAIA*/
+
+.gaia-page {
+	width: 100vw;
+	height: 100vh;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	background-color:lemonchiffon;
+}
+
+.gaia-icon img { 
+	width: 100vw;
+}
+
+
+/*waves*/
+
+.waves{
+	width: 100vw;
+	height: 100vh;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	animation-name: waves;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes waves {
+	0%		{background-color: white;}
+	25%		{background-color: darkcyan;}
+	50%		{background-color: midnightblue;}
+	75%		{background-color: mediumaquamarine;}
+	100%	{background-color: white;}
+}
 
 
 
+/*Seconds*/
+.seconds{
+	background-color:crimson;
+	height:100vh;
+	width:100vw;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
 
-
-
-
-
-
-
-
-
+.seconds-text{
+	color:darkred;
+	font-size: 5vw;
+	text-align: center;
+}
 
