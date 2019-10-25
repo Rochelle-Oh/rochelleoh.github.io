@@ -1,87 +1,295 @@
 body {
-	font-family: Cooper Black, Arial narrow;
-	font-size: 250px;
-	color:white;
-	background: rgb(55,101,226);
-	background: linear-gradient(0deg, rgba(55,101,226,1) 0%, rgba(248,31,27,1) 100%);
+	font-family: Signo;
+	font-size: 24px;
+	background-color: #E86E1C;
+	cursor: cell;
 }
 
 a {
-	color:blue;
+	color:black;
 }
 
-/* When you first edit this file, you can delete everything below here. Remember you should use body to target all elements on the page first and then override them later  */
+/*HOMEPAGE----------------------------------*/
 
-/* EXAMPLE CODE PLEASE REMOVE */
+.main-menu {
+	position: fixed;
+	width:25%;
+	top:0px;
+	left:0px;
+	height:100vh;
+	font-size: 3vw;
+	text-transform: uppercase;
+}
 
-.nav{
-	font-size: 20px;
-	background-color: white;
-	padding: 5px;
+.menu-content {
+	padding: 10px;
+}
+
+.menu-content a{
 	text-decoration: none;
-	font-family: arial narrow;
-	font-weight: bold;
 }
 
-@keyframes title {
-	0%		{color: #ffc800;}
-	33%		{color: red;}
-	66%		{color: blue;}
-	100%	{color: #ffc800;}
+.main {
+	width:100vw;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
-.title{
-	font-size: 200px;
-	font-family: Cooper Black, serif;
-	color:#ffc800;
-	text-shadow: 5px 5px rgb(0,0,0);
-	text-align: center;
-	animation-name: title;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
+.main-image img {
+	margin-top: -10px; 
+	width: 100%;
 }
 
-.bio {
+.listing {
+	margin-bottom: 3vw;
+	font-size: 3vw;
+	text-transform: uppercase;
+}
+
+
+
+
+/*5050----------------------------------*/
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*PODCAST----------------------------------*/
+
+.pod-left-content h1 {
+	font-family: signo, sans-serif;
+	font-weight: 700;
 	font-size: 50px;
-	color: blue;
-	margin-left: 20px;
+	font-style: normal;
 }
 
-.face{
- margin: auto;
-  width: 50%;
+.pod-left {
+	color: #D63F2B;
+	background-color:#FFD1CF;
+	flex:0 0 50%;
+	height: 100vh;
+	overflow: scroll;
 }
 
-.face img {
-width: 10%;
+.pod-left-content {
+	padding: 10px;
+	margin-top: 160px;
 }
 
-.foodgif{
-	width: 20px
-	margin:auto;
-	float: right;
+.pod-left img { 
+	width: 100%;
+
+ }
+
+/*Right*/
+
+.pod-right {
+	color: #D63F2B;
+	background-color: white;
+	flex:0 0 50%;
+	height: 100vh;
+	overflow: scroll;	
 }
 
-.foodgif img {
-	width:70%; 
+.pod-right-content {
+	padding: 10px;
+	margin: 30px;
 }
 
-.friedegg{
-	width: 10px
-	margin:auto;
-	float: right;
+.pod-right-content h1 {
+	font-family: signo, sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	font-style: normal;
+	margin-bottom: 30px;
 }
 
-.friedgg img {
-	width:10%; 
+.pod-right img {
+	width: 100%;
 }
 
-.bio {
-	border: 10px solid black;
+/* Podcast logo */
+
+.pod-logo {
+	margin-top: -30px;
+}
+
+.pod-logo img {
+	width: 30%;
+}
+
+ /*Podcast Table*/
+
+ .intro {
+	padding: 10px;
+}
+
+.table {
+	margin-top: 20px;
+}
+
+
+.row {
+	display: flex;
+	flex-wrap:wrap;
+	border-top: 2px solid black;
+	padding: 10px;
+}
+
+.number {
+	flex:0 0 10%;
+}
+
+
+.title {
+	flex:0 0 65%;
+}
+
+
+.date {
+	flex:0 0 25%;
+}
+
+
+
+/*ABOUT----------------------------------*/
+
+.about-left-content h1 {
+	font-family: signo, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.about-left {
+	color: #47342C;
+	background-color:#F4CA98;
+	flex:0 0 50%;
+	height: 100vh;
+	overflow: scroll;
+}
+
+.about-left-content {
+	padding: 10px;
+	margin-top: 100px;
+}
+
+.about-left img { 
+	width: 25%;
+
+ }
+
+/*Right*/
+
+.about-right {
+	color: #47342C;
+	background-color: white;
+	flex:0 0 50%;
+	height: 100vh;
+	overflow: scroll;	
+	flex-wrap: wrap;
+}
+
+.about-right-content {
+	padding: 10px;
+	margin-top: 30px;
+}
+
+.about-right-content h1 {
+	font-family: signo, sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	font-style: normal;
+	margin-bottom: 30px;
+}
+
+.about-right img {
+	width: 50%;
+}
+
+/* button logo */
+
+.button-logo {
+	margin-top: -5px;
+	margin-left: -5px;
+	position: fixed;
+}
+
+.button-logo img {
+	width: 10%;
+}
+
+/*MAGAZINE----------------------------------*/
+.mag-left-content h1 {
+	font-family: signo, sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	font-style: normal;
+}
+
+.mag-left-content h2 {
+	font-family: signo, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.mag-left {
+	color: #155141;
 	background-color:white;
-	padding: 50px;
-	margin-top:100px;
-	margin-bottom:100px;
-	width:1000px;
+	flex:0 0 50%;
+	height: 100vh;
+	overflow: scroll;
+
 }
 
+.mag-left-content {
+	padding: 10px;
+	margin-top: 130px;
+	
+}
+
+.mag-left img { 
+	width: 100%;
+	margin-bottom: 10px;
+	border: 2px solid black;
+	box-shadow:  5px 5px 5px black;
+ }
+
+/*Right*/
+
+.mag-right {
+	color: #155141;
+	background-color: #C0DD9F;
+	flex:0 0 50%;
+	height: 100vh;
+	overflow: scroll;	
+}
+
+.mag-right-content {
+	padding: 10px;
+	margin-bottom: 50px;
+	margin-top: 30px;
+
+}
+.mag-right-content h1 {
+	font-family: signo, sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	font-style: normal;
+}
+.mag-right-content h2 {
+	font-family: signo, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.mag-right img {
+	width: 100%;
+	margin-bottom: 10px;
+	border: 2px solid black;
+	box-shadow:  5px 5px 5px black;
+}
