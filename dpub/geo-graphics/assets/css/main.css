@@ -10,6 +10,30 @@ a {
 	text-decoration: none;
 }
 
+/*Recs*/
+
+.recs{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	background-color: orange;
+}
+
+.recs-2{
+	width: 60vh;
+	height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.recs-text{
+	color: orangered;
+	margin:auto;
+}
+
 /*Verified COMMENCE*/
 
 .cycle-pattern{
@@ -455,4 +479,13 @@ a {
 	font-size: 5vw;
 	text-align: center;
 }
+
+
+
+
+
+
+
+
+
 
