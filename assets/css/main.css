@@ -7,7 +7,7 @@ body {
 }
 
 a {
-	color:red;
+	color:black;
 	cursor: cell;
 }
 
@@ -18,7 +18,7 @@ a {
 }
 
 .filter-item {
-	font-size: 20pt;
+	font-size: 25pt;
 	cursor: cell;
 }
 
@@ -184,6 +184,13 @@ a {
 	flex-wrap: wrap;
 	background-color: white;
 }
+
+.consent{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #e4c5cd;
+}
+
 
 
 
