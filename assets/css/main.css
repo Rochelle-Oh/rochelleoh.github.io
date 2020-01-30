@@ -80,12 +80,6 @@ a {
 
 }
 
-.project-page{
-	display: flex;
-	flex-wrap: wrap;
-	background-color: black;
-}
-
 .project-text{
 	color:white;
 	width: 50vw;
@@ -165,8 +159,20 @@ a {
   	padding: 20px;
 }
 
+.video{
+	margin-left:auto;
+	margin-right:auto;
+}
+
 
 /*Project BGs*/
+
+.project-page{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: black;
+}
+
 .stretch{
 	background-color: #824832;
 }
