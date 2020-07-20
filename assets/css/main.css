@@ -52,7 +52,7 @@ span {
 }
 
 .button a{
-	/*display: inline-block;*/
+	display: inline-block;
 	padding:8px;
 	border-radius:50px;
 	border:2px solid black;
@@ -65,7 +65,7 @@ span {
 }
 
 .button:hover a{
-	/*display: inline-block;*/
+	display: inline-block;
 	padding:8px;
 	border-radius:50px;
 	border:2px solid white;
