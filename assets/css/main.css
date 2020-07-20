@@ -2,6 +2,7 @@ body {
 	font-family: Arial,sans-serif;
 	font-size: 32px;
 	background-color: #f1ef8e;
+	margin-bottom: 5px;
 	color:black;
 	cursor: crosshair;
 }
@@ -10,6 +11,112 @@ a {
 	color:black;
 	cursor: cell;
 }
+
+iframe {
+	width: 100vw;
+	height: 100vh;
+}
+
+span {
+	font-size: 20px;
+	font-style: italic;
+}
+
+.foliopdf iframe {
+	width: 90vw;
+	height: 90vh;
+	display: block;
+	margin:auto;
+}
+
+.homepage{
+
+}
+
+.homepage img{
+	width: 100vw;
+}
+
+.text {
+	padding: 5vw;
+
+}
+
+
+.button{
+	display: inline-block;
+	/*font-size: 20px;*/
+	/*text-align: right;*/
+	
+	/*padding: 20px;*/
+}
+
+.button a{
+	/*display: inline-block;*/
+	padding:8px;
+	border-radius:50px;
+	border:2px solid black;
+	color:black;
+	text-decoration:none;
+	padding-bottom: 8px;
+	margin: 2px;
+	background-color: white;
+	text-shadow: none;
+}
+
+.button:hover a{
+	/*display: inline-block;*/
+	padding:8px;
+	border-radius:50px;
+	border:2px solid white;
+	color:white;
+	text-decoration:none;
+	padding-bottom: 8px;
+	margin: 2px;
+	background-color: black;
+	text-shadow: none;
+}
+
+/*Ticker box*/
+/* OUTER CONTAINER */
+.tcontainer {
+  width: 100%;
+  overflow: hidden; /* Hide scroll bar */
+}
+ 
+/* MIDDLE CONTAINER */
+.ticker-wrap {
+  width: 100%;
+  padding-left: 100%; /* Push contents to right side of screen */
+  background-color: #eee;
+}
+
+/* INNER CONTAINER */
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-100%, 0, 0); }
+}
+.ticker-move {
+  /* Basically move items from right side of screen to left in infinite loop */
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: ticker;
+  animation-duration: 10s;
+}
+.ticker-move:hover{
+  animation-play-state: paused; /* Pause scroll on mouse hover */
+}
+
+/* ITEMS */
+.ticker-item{
+  display: inline-block; /* Lay items in a horizontal line */
+  padding: 0 2rem;
+}
+
+/*Ticker end*/
 
 .filter {
 	position: fixed; 
@@ -20,6 +127,16 @@ a {
 .filter-item {
 	font-size: 25pt;
 	cursor: cell;
+}
+
+.filter-item-image {
+	width: 10px;
+
+
+}
+.filter-item-image img {
+	width: 50px;
+
 }
 
 .menu {
