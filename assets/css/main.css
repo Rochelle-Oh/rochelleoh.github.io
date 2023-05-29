@@ -13,8 +13,7 @@ a {
 }
 
 iframe {
-	width: 100vw;
-	height: 100vh;
+	
 }
 
 span {
@@ -133,6 +132,11 @@ hr {
 
 .scrolling-wrapper img{
 	height: 75vh;
+}
+
+.scrolling-wrapper iframe{
+	height:75vh;
+	width: 123vh;
 }
 
 .scrolling-wrapper video{
