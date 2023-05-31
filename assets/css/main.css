@@ -136,7 +136,7 @@ hr {
 
 .scrolling-wrapper iframe{
 	height:75vh;
-	width: 123vh;
+	
 }
 
 .scrolling-wrapper video{
@@ -148,12 +148,49 @@ hr {
     margin:-3px;
   }
 
+/* 3:4 Video */
 
-.digi-card{
-	display: inline-block;
-	margin:-3px;
-	/* margin-right:8vw; */
+.video34{
+		display: inline-block;
+    margin:-3px;
 }
+
+.video34 iframe{
+    width: 60vh;
+}
+
+/* 16:9 Video */
+
+.video169{
+		display: inline-block;
+    margin:-3px;
+}
+
+.video169 iframe{
+    width: 123vh;
+}
+
+/* 9:16 Video */
+
+.video916{
+		display: inline-block;
+    margin:-3px;
+}
+
+.video916 iframe{
+    width: 42vh;
+}
+
+/* 1:1 Video */
+
+.video11 {
+	display: inline-block;
+   margin:-3px;
+}
+.video11 iframe{
+   width: 75vh;
+}
+
 
 
 
