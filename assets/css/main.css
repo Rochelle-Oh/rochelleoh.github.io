@@ -170,6 +170,24 @@ hr {
     width: 123vh;
 }
 
+.videocs{
+	display: inline-block;
+    margin:-3px;
+}
+
+.videocs iframe{
+	width: 132vh;
+}
+
+.videoko{
+	display: inline-block;
+    margin:-3px;
+}
+
+.videoko iframe{
+	width:125vh;
+}
+
 /* 9:16 Video */
 
 .video916{
