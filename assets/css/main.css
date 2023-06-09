@@ -30,7 +30,10 @@ hr {
 	margin-bottom:40px;
 }
 
+
+
 /* Nav */
+
 
 .header{
 	width: ;
@@ -100,6 +103,7 @@ hr {
 
 /* Type */
 
+
 .project{
 	padding-bottom:5vh;
 }
@@ -121,17 +125,59 @@ hr {
 
 }
 
+
+/*scroll bars*/ 
+
+.scrolling-wrapper::-webkit-scrollbar {
+	outline: 1.5px solid black;
+	cursor: cell;
+	-webkit-cursor: cell;
+	/*box-shadow: inset 0 0 5px grey;*/
+}
+.scrolling-wrapper::-webkit-scrollbar.active {
+	cursor: cell;
+	-webkit-cursor: cell;
+}
+.scrolling-wrapper::-webkit-scrollbar-button {
+	outline: 1.5px solid black;
+	cursor: cell;
+}
+.scrolling-wrapper::-webkit-scrollbar-thumb {
+	outline: 1.5px solid black;
+	cursor: cell;
+}
+
+.scrolling-wrapper::-webkit-scrollbar-thumb:hover {
+	outline: 1.5px solid black;
+	cursor: cell;
+}
+
+.scrolling-wrapper::-webkit-scrollbar-track-piece{
+
+
+}
+
 /* Galleries */
 
 .scrolling-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
+  user-select: none;
+  will-change: transform;
+  position: relative;
+  /*-webkit-overflow-scrolling: touch;*/
+ }
+
+ .scrolling-wrapper.active {
+ 	cursor: cell;
+ 	-webkit-cursor: cell;
  }
 
 .scrolling-wrapper img{
-	height: 75vh;
+	display: inline-flex;
+ 
+	
 }
 
 .scrolling-wrapper iframe{
@@ -144,8 +190,20 @@ hr {
 }
 
 .card {
-    display: inline-block;
     margin:-3px;
+    display: inline-flex;
+  }
+
+  .card img {
+  	height: 75vh;
+  	display: inline-flex;
+    align-items: left;
+  justify-content: left;
+  }
+
+ .card-gap {
+    display: inline-flex;
+    margin-right: 10vh;
   }
 
 /* 3:4 Video */
