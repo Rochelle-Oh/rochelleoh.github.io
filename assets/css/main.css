@@ -142,11 +142,7 @@ hr {
 .scrolling-wrapper::-webkit-scrollbar-thumb {
 	outline: 1.5px solid black;
 	cursor: cell;
-}
-
-.scrolling-wrapper::-webkit-scrollbar-thumb:hover {
-	outline: 1.5px solid black;
-	cursor: cell;
+	background: white;
 }
 
 .scrolling-wrapper::-webkit-scrollbar-track-piece{
