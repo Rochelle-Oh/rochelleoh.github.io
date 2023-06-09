@@ -139,7 +139,7 @@ hr {
 	-webkit-cursor: cell;
 }
 .scrolling-wrapper::-webkit-scrollbar-button {
-	outline: 1.5px solid black;
+	
 	cursor: cell;
 }
 .scrolling-wrapper::-webkit-scrollbar-thumb {
