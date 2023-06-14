@@ -94,6 +94,21 @@ hr {
 	line-height:15px;
 }
 
+/*Back to top*/
+
+.footer{
+	width: 100%;
+	padding-top: 100px;
+	margin-bottom: -4vh;
+	
+
+}
+
+.back-to-top{
+	text-align: right;
+	margin-right: 10px;
+}
+
 /* Projects*/
 
 .blocks{
@@ -169,8 +184,7 @@ hr {
 
 .scrolling-wrapper img{
 	display: inline-flex;
- 
-	
+ 	height: 75vh;
 }
 
 .scrolling-wrapper iframe{
@@ -187,16 +201,10 @@ hr {
     display: inline-flex;
   }
 
-  .card img {
-  	height: 75vh;
-  	display: inline-flex;
-    align-items: left;
-  justify-content: left;
-  }
 
  .card-gap {
     display: inline-flex;
-    margin-right: 10vh;
+    margin-right: 15vh;
   }
 
 /* 3:4 Video */
