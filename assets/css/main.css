@@ -12,6 +12,11 @@ a {
 	cursor: cell;
 }
 
+i{
+	font-family: serif;
+	font-style: italic;
+}
+
 iframe {
 	
 }
